@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 .App-logo {
@@ -12,7 +15,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.check{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +36,20 @@
 
 .App-link {
   color: #61dafb;
+}
+.input-container input {
+  color: #9495A5;
+}
+.check-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 8px;
+}
+.container {
+  @apply md:w-[540px] mx-auto
 }
 
 @keyframes App-logo-spin {
